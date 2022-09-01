@@ -1,0 +1,13 @@
+version: '1.0.0'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: './Dockerfile'
+    environment:
+      - username=ryoo
+    ports:
+      - '3000:3000'
+    
+      
